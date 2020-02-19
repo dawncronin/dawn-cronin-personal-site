@@ -51,8 +51,8 @@ body {
     background-color: white;
     text-align: left;
     padding: 30px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 #face {
@@ -78,8 +78,8 @@ body {
 }
 
 #about {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 span {
