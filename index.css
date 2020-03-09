@@ -6,7 +6,6 @@ body {
     margin: 0;
 }
 
-
 .navBar {
     z-index: 100;
     position: fixed;
@@ -47,54 +46,164 @@ body {
     display: inline-block;
     z-index: 1;
 }
-.about, .contact, .projects {
-    background-color: white;
-    text-align: left;
-    padding: 30px;
-    padding-left: 15%;
-    padding-right: 15%;
-}
 
-#face {
-    margin-top: 150px;
-    border-radius: 120px;
-    height: 150px;
-    border-style: solid;
-    border-width: 6px;
-    border-color: rgb(197, 194, 197);
-}
 
-.project {
-    margin: 20px;
-}
+@media all and (min-width:700px) {
+    .about, .contact, .projects {
+        background-color: white;
+        text-align: left;
+        padding: 30px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    
+    #face {
+        margin-top: 150px;
+        border-radius: 120px;
+        height: 150px;
+        border-style: solid;
+        border-width: 6px;
+        border-color: rgb(197, 194, 197);
+    }
+    
+    .project {
+        margin: 20px;
+    }
+    
+    .timeline ul {
+        list-style: none;
+    }
+    
+    .timeline li {
+        list-style: none;
+        padding: 10px;
+    }
+    
+    #about {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: rgb(121, 103, 121);
+    }
+    
+    #resume {
+        padding: 20px;
+    }
+    }
 
-.timeline ul {
-    list-style: none;
-}
+  
 
-.timeline li {
-    list-style: none;
-    padding: 10px;
-}
-
-#about {
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-span {
-    font-weight: bold;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(121, 103, 121);
-}
-
-#resume {
-    padding: 20px;
-
+  @media all and (min-width:500px) and (max-width: 700px) {
+    .about, .contact, .projects {
+        background-color: white;
+        text-align: left;
+        padding: 30px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    
+    #face {
+        margin-top: 150px;
+        border-radius: 120px;
+        height: 150px;
+        border-style: solid;
+        border-width: 6px;
+        border-color: rgb(197, 194, 197);
+    }
+    
+    .project {
+        margin: 20px;
+    }
+    
+    .timeline ul {
+        list-style: none;
+    }
+    
+    .timeline li {
+        list-style: none;
+        padding: 10px;
+    }
+    
+    #about {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: rgb(121, 103, 121);
+    }
+    
+    #resume {
+        padding: 20px;
+    }  }
+  
+  @media all and (max-width: 500px) {
+    .about, .contact, .projects {
+        background-color: white;
+        text-align: left;
+        padding: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    #face {
+        margin-top: 150px;
+        border-radius: 120px;
+        height: 150px;
+        border-style: solid;
+        border-width: 6px;
+        border-color: rgb(197, 194, 197);
+    }
+    
+    .project {
+        margin: 20px;
+    }
+    
+    .timeline ul {
+        list-style: none;
+    }
+    
+    .timeline li {
+        list-style: none;
+        padding: 10px;
+    }
+    
+    #about {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: rgb(121, 103, 121);
+    }
+    
+    #resume {
+        padding: 20px;
+    }  
 }
