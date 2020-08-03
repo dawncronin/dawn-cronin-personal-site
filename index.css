@@ -26,6 +26,8 @@ body {
 nav {
     background: rgb(192, 173, 196);
     padding: 0px;
+    box-shadow: 0px 1px 3px rgb(73, 73, 73);
+    
 }
 a {
     color: black;
@@ -39,7 +41,7 @@ a {
     font-weight: bold;
     padding: 10px;
     text-align: center;
-    box-shadow: 0px 1px 3px;
+    box-shadow: 0px 1px 3px rgb(73, 73, 73);
 }
 
 .item {
@@ -85,6 +87,11 @@ img {
     padding: 25px;
 }
 .profile-pic {
+    text-align: center;
+}
+
+#about {
+    padding: 15px;
     text-align: center;
 }
 
