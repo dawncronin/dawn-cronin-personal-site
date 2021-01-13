@@ -49,9 +49,20 @@ body {
 
 
 @media all and (min-width:700px) {
+    .project-image-container {
+        text-align: center;
+    }
+    #picture {
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .about-pictures {
+        text-align: center;
+    }
 
     .projectImage {
-        height: 300px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: 500px;
     }
     .about, .contact, .projects {
         background-color: white;
@@ -62,12 +73,11 @@ body {
     }
     
     #face {
+        text-align: center;
         margin-top: 150px;
-        border-radius: 120px;
-        height: 150px;
-        border-style: solid;
-        border-width: 6px;
-        border-color: rgb(197, 194, 197);
+        border-radius: 20px;
+        width: 500px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
     .project {
@@ -109,15 +119,35 @@ body {
 
   @media all and (min-width:500px) and (max-width: 700px) {
 
-    .projectImage {
-        width: 100%;
+    .project-image-container {
+        text-align: center;
     }
+    #picture {
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .about-pictures {
+        text-align: center;
+    }
+
+    .projectImage {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: 250px;
+    }
+
     .about, .contact, .projects {
         background-color: white;
         text-align: left;
         padding: 30px;
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #picture {
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .about-pictures {
+        text-align: center;
     }
     
     #face {
@@ -127,6 +157,14 @@ body {
         border-style: solid;
         border-width: 6px;
         border-color: rgb(197, 194, 197);
+    }
+
+    #picture {
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .about-pictures {
+        text-align: center;
     }
     
     .project {
@@ -164,10 +202,22 @@ body {
     }  }
   
   @media all and (max-width: 500px) {
+    .project-image-container {
+        text-align: center;
+    }
+    #picture {
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .about-pictures {
+        text-align: center;
+    }
 
     .projectImage {
-        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: 200px;
     }
+
     .about, .contact, .projects {
         background-color: white;
         text-align: left;
@@ -176,13 +226,20 @@ body {
         padding-right: 5%;
     }
     
-    #face {
+    /* #face {
         margin-top: 150px;
         border-radius: 120px;
         height: 150px;
         border-style: solid;
         border-width: 6px;
         border-color: rgb(197, 194, 197);
+    } */
+    #face {
+        text-align: center;
+        margin-top: 150px;
+        border-radius: 20px;
+        width: 200px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
     .project {
