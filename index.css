@@ -1,4 +1,5 @@
-body {
+body, html {
+    width: 100%;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
     background-color: rgb(121, 103, 121);
@@ -6,7 +7,7 @@ body {
     margin: 0;
 }
 
-.navBar {
+.nav-bar {
     z-index: 100;
     position: fixed;
     left: 0;
@@ -16,17 +17,17 @@ body {
     box-shadow: 2px 2px 5px rgba(27, 27, 27, 0.8);
 }
 
-.navEle {
+.nav-ele {
     display: inline-block;
     margin: 20px;
 }
 
-.navEle a {
+.nav-ele a {
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
-.navEle a:hover {
+.nav-ele a:hover {
     color: rgb(121, 103, 121);
 }
 
@@ -47,232 +48,122 @@ body {
     z-index: 1;
 }
 
+.arrow {
+    display: inline-block;
+    transform: translateY(-50%);
+    font-size: 125%;
+    border: none;
+}
 
-@media all and (min-width:700px) {
-    .project-image-container {
-        text-align: center;
-    }
-    #picture {
-        border-radius: 8px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    .about-pictures {
-        text-align: center;
-    }
+.arrow:hover {
+    color: gray;
+    cursor: pointer;
+}
 
-    .projectImage {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        height: 500px;
-    }
-    .about, .contact, .projects {
-        background-color: white;
-        text-align: left;
-        padding: 30px;
-        padding-left: 15%;
-        padding-right: 15%;
-    }
-    
-    #face {
-        text-align: center;
-        margin-top: 150px;
-        border-radius: 20px;
-        width: 500px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    
-    .project {
-        margin: 20px;
-    }
-    
-    .timeline ul {
-        list-style: none;
-    }
-    
-    .timeline li {
-        list-style: none;
-        padding: 10px;
-    }
-    
-    #about {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    
-    span {
-        font-weight: bold;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    a:hover {
-        color: rgb(121, 103, 121);
-    }
-    
-    #resume {
-        padding: 20px;
-    }
-    }
+.left {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+}
 
-  
+.right {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+}
 
-  @media all and (min-width:500px) and (max-width: 700px) {
+.project-image-container {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+.projectImage {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    display: inline-block;
+}
 
-    .project-image-container {
-        text-align: center;
-    }
-    #picture {
-        border-radius: 8px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    .about-pictures {
-        text-align: center;
-    }
+#picture {
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about-pictures {
+    text-align: center;
+}
 
-    .projectImage {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        height: 250px;
-    }
 
-    .about, .contact, .projects {
-        background-color: white;
-        text-align: left;
-        padding: 30px;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    #picture {
-        border-radius: 8px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    .about-pictures {
-        text-align: center;
-    }
-    
-    #face {
-        margin-top: 150px;
-        border-radius: 120px;
-        height: 150px;
-        border-style: solid;
-        border-width: 6px;
-        border-color: rgb(197, 194, 197);
-    }
+.about, .contact, .projects {
+    background-color: white;
+    text-align: left;
+    padding: 30px;
+    /* width: 70%; */
+    padding-left: 15%;
+    padding-right: 15%;
+}
 
-    #picture {
-        border-radius: 8px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    .about-pictures {
-        text-align: center;
-    }
-    
-    .project {
-        margin: 20px;
-    }
-    
-    .timeline ul {
-        list-style: none;
-    }
-    
-    .timeline li {
-        list-style: none;
-        padding: 10px;
-    }
-    
-    #about {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    
-    span {
-        font-weight: bold;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    a:hover {
-        color: rgb(121, 103, 121);
-    }
-    
-    #resume {
-        padding: 20px;
-    }  }
-  
+#face {
+    text-align: center;
+    margin-top: 150px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project {
+    margin: 20px;
+}
+
+.timeline ul {
+    list-style: none;
+}
+
+.timeline li {
+    list-style: none;
+    padding: 10px;
+}
+
+#about {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+span {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(121, 103, 121);
+}
+
+#resume {
+    padding: 20px;
+}
+
+
   @media all and (max-width: 500px) {
-    .project-image-container {
-        text-align: center;
-    }
-    #picture {
-        border-radius: 8px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    .about-pictures {
-        text-align: center;
-    }
-
-    .projectImage {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        height: 200px;
+    body {
+        font-size: 80%;
     }
 
     .about, .contact, .projects {
         background-color: white;
         text-align: left;
         padding: 15px;
+        width: 90%;
         padding-left: 5%;
         padding-right: 5%;
     }
-    
-    /* #face {
-        margin-top: 150px;
-        border-radius: 120px;
-        height: 150px;
-        border-style: solid;
-        border-width: 6px;
-        border-color: rgb(197, 194, 197);
-    } */
-    #face {
-        text-align: center;
-        margin-top: 150px;
-        border-radius: 20px;
-        width: 200px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    h3 {
+        font-size: 80%;
+        margin: 5px 0px 5px 0px;
     }
-    
-    .project {
-        margin: 20px;
-    }
-    
-    .timeline ul {
-        list-style: none;
-    }
-    
-    .timeline li {
-        list-style: none;
-        padding: 10px;
-    }
-    
-    #about {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    
-    span {
-        font-weight: bold;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    a:hover {
-        color: rgb(121, 103, 121);
-    }
-    
-    #resume {
-        padding: 20px;
-    }  
-}
+} 
