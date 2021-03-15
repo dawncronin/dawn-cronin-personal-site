@@ -14,7 +14,7 @@ body, html {
     background-color: white;
     width: 100%;
     display: inline-block;
-    box-shadow: 2px 2px 5px rgba(27, 27, 27, 0.8);
+    box-shadow: 2px 2px 5px rgba(83, 83, 83, 0.8);
 }
 
 .nav-ele {
@@ -60,13 +60,13 @@ body, html {
     cursor: pointer;
 }
 
-.left {
+.left, .left-2{
     position: absolute;
     top: 50%;
     left: -5%;
 }
 
-.right {
+.right, .right-2{
     position: absolute;
     top: 50%;
     right: -5%;
@@ -85,7 +85,7 @@ body, html {
 }
 
 #picture {
-    border-radius: 8px;
+    border-radius: 0px;
     width: 90%;
     max-width: 500px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -99,15 +99,19 @@ body, html {
     background-color: white;
     text-align: left;
     padding: 30px;
-    /* width: 70%; */
     padding-left: 15%;
     padding-right: 15%;
 }
 
+
+.about p {
+    margin: 20px auto;
+    max-width: 600px;
+}
 #face {
     text-align: center;
     margin-top: 150px;
-    border-radius: 20px;
+    border-radius: 0px;
     width: 80%;
     max-width: 500px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
